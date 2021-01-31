@@ -5,8 +5,10 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app"
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "server-install": "npm install",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "author": "Sahar",
   "license": "MIT",
